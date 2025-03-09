@@ -1,0 +1,39 @@
+@import url(https://fonts.bunny.net/css?family=Crimson-Pro:400|alexandria:400|reddit-mono:400);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body {@apply p-3 text-lg bg-rbase text-rtext font-serif;}
+b, strong { @apply font-bold; }
+i, em { @apply italic; }
+code { @apply p-1 m-1 font-mono rounded-lg bg-rsurface; }
+aside {@apply text-sm text-rfoam; }
+img { @apply select-none; }
+hr { @apply border-rrose; }
+p { @apply inline; }
+fieldset { @apply p-3 rounded-lg border-2 border-rrose; }
+legend { @apply px-1; }
+blockquote { @apply pl-4 border-l-4 text-rpine border-rpine; }
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.link2 { @apply inline-block relative underline decoration-rrose decoration-2 hover:no-underline; }
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1 { @apply py-1 text-5xl; }
+h2 { @apply py-1 text-3xl; }
+h3 { @apply py-1 text-3xl; }
+h4 { @apply py-1 text-2xl; }
+h5 { @apply py-1 text-2xl; }
+h6 { @apply py-1 text-xl; }
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ol { @apply list-inside text-left list-roman; }
+ul { @apply list-disc list-inside text-left; }
+ul ul, ul ol, ol ul, ol ol { @apply pl-8; }
+li * { @apply inline; }
