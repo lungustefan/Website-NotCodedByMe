@@ -17,23 +17,23 @@ module.exports = {
     },
     extend: {
       colors: {
-        rbase: '#191724',
-        rsurface: '#1f1d2e',
-        roverlay: '#26233a',
-        rmuted: '#6e6a86',
-        rsubtle: '#908caa',
-        rtext: '#e0def4',
-        rlove: '#eb6f92',
-        rgold: '#f6c177',
-        rrose: '#ebbcba',
-        rpine: '#31748f',
-        rfoam: '#9ccfd8',
-        riris: '#c4a7e7',
-        rhighlightl: '#21202e',
-        rhighlightm: '#403d52',
-        rhighlighth: '#524f67'
+        rbase: '#26221f',         // background
+        rsurface: '#2e2a26',      // slightly lighter background
+        roverlay: '#3a3530',      // overlay panels
+        rmuted: '#a89f95',        // muted elements (borders, hints)
+        rsubtle: '#bfb5a9',       // subtle text
+        rtext: '#d2c8bc',         // main text
+        rlove: '#d7c0a4',         // accent (underline, highlights)
+        rgold: '#e0c090',         // secondary highlight
+        rrose: '#debdb6',         // soft rose/pink
+        rpine: '#768179',         // soft forest green
+        rfoam: '#9fb8b4',         // cool blue/teal
+        riris: '#c1b0d0',         // soft purple
+        rhighlightl: '#302c28',   // low highlight
+        rhighlightm: '#3f3a36',   // medium highlight
+        rhighlighth: '#d7c0a4',   // high contrast highlight (underline)
       },
     },
   },
   plugins: [],
-}
+        }
