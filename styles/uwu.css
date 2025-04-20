@@ -582,16 +582,16 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-4{
+  margin-bottom: 1rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
 
 .mt-\[45vh\]{
   margin-top: 45vh;
-}
-
-.mb-4{
-  margin-bottom: 1rem;
 }
 
 .flex{
@@ -666,17 +666,7 @@ video {
 
 .bg-rsurface{
   --tw-bg-opacity: 1;
-  background-color: rgb(31 29 46 / var(--tw-bg-opacity, 1));
-}
-
-.bg-rhighlightl{
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 32 46 / var(--tw-bg-opacity, 1));
-}
-
-.bg-rrose{
-  --tw-bg-opacity: 1;
-  background-color: rgb(235 188 186 / var(--tw-bg-opacity, 1));
+  background-color: rgb(46 42 38 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-50{
@@ -695,18 +685,22 @@ video {
   padding-top: 0.5rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
 .text-lg{
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-semibold{
   font-weight: 600;
+}
+
+.underline{
+  text-decoration-line: underline;
 }
 
 .shadow-xl{
@@ -720,13 +714,13 @@ video {
 
 body{
   --tw-bg-opacity: 1;
-  background-color: rgb(25 23 36 / var(--tw-bg-opacity, 1));
+  background-color: rgb(38 34 31 / var(--tw-bg-opacity, 1));
   padding: 0.75rem;
   font-family: Crimson Pro, serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
-  color: rgb(224 222 244 / var(--tw-text-opacity, 1));
+  color: rgb(210 200 188 / var(--tw-text-opacity, 1));
 }
 
 b, strong{
@@ -741,7 +735,7 @@ code{
   margin: 0.25rem;
   border-radius: 0.5rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(31 29 46 / var(--tw-bg-opacity, 1));
+  background-color: rgb(46 42 38 / var(--tw-bg-opacity, 1));
   padding: 0.25rem;
   font-family: "Reddit Mono", monospace;
 }
@@ -750,7 +744,7 @@ aside{
   font-size: 0.875rem;
   line-height: 1.25rem;
   --tw-text-opacity: 1;
-  color: rgb(156 207 216 / var(--tw-text-opacity, 1));
+  color: rgb(159 184 180 / var(--tw-text-opacity, 1));
 }
 
 img{
@@ -761,7 +755,7 @@ img{
 
 hr{
   --tw-border-opacity: 1;
-  border-color: rgb(235 188 186 / var(--tw-border-opacity, 1));
+  border-color: rgb(222 189 182 / var(--tw-border-opacity, 1));
 }
 
 p{
@@ -772,7 +766,7 @@ fieldset{
   border-radius: 0.5rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(235 188 186 / var(--tw-border-opacity, 1));
+  border-color: rgb(222 189 182 / var(--tw-border-opacity, 1));
   padding: 0.75rem;
 }
 
@@ -784,10 +778,10 @@ legend{
 blockquote{
   border-left-width: 4px;
   --tw-border-opacity: 1;
-  border-color: rgb(49 116 143 / var(--tw-border-opacity, 1));
+  border-color: rgb(118 129 121 / var(--tw-border-opacity, 1));
   padding-left: 1rem;
   --tw-text-opacity: 1;
-  color: rgb(49 116 143 / var(--tw-text-opacity, 1));
+  color: rgb(118 129 121 / var(--tw-text-opacity, 1));
 }
 
 /* Links
@@ -797,7 +791,7 @@ blockquote{
   position: relative;
   display: inline-block;
   text-decoration-line: underline;
-  text-decoration-color: #ebbcba;
+  text-decoration-color: #debdb6;
   text-decoration-thickness: 2px;
 }
 
