@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Down for Maintenance</title>
+  <style>
+    body {
+      background-color: #111;
+      color: #eee;
+      font-family: "Courier New", Courier, monospace;
+      text-align: center;
+      padding: 10%;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    .glitch {
+      animation: glitch 1s infinite;
+    }
+    @keyframes glitch {
+      0% { text-shadow: 2px 0 red; }
+      25% { text-shadow: -2px 0 blue; }
+      50% { text-shadow: 2px 0 green; }
+      75% { text-shadow: -2px 0 purple; }
+      100% { text-shadow: 2px 0 red; }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="glitch" id="status">DOWN FOR MAINTENANCE</h1>
+  <p id="reason">Initiating quantum flux realignment protocol...</p>
+
+  <script>
+    const reasons = [
+      "Recalibrating the hamster wheel.",
+      "Synchronizing with the moon's gravitational field.",
+      "Running a background unicorn update.",
+      "Purging negative vibes from the server room.",
+      "Feeding the AI more memes.",
+      "Recharging the cloud with actual rain.",
+      "Upgrading from potato tier hosting.",
+      "Cleaning up a spilled energy drink on the motherboard.",
+      "Chasing down the escaped electrons.",
+      "Consulting with the cosmic IT support."
+    ];
+
+    setInterval(() => {
+      const rand = Math.floor(Math.random() * reasons.length);
+      document.getElementById('reason').textContent = reasons[rand];
+    }, 3000);
+  </script>
+</body>
+</html>
