@@ -1,152 +1,65 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Stefan's website." />
+  <meta property="og:title" content="Stefan" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://lungustefan.ro/" />
+  <meta property="og:description" content="Stefan's website." />
+  <meta name="theme-color" content="#FFAA00" />
+  <title>Stefan</title>
 
-  <meta charset="UTF-8">
-
-  <title>Down for Maintenance</title>
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-
-    body {
-
-      background-color: #111;
-
-      color: #eee;
-
-      font-family: "Courier New", Courier, monospace;
-
-      text-align: center;
-
-      padding: 10%;
-
-      margin: 0;
-
-    }
-
-    h1 {
-
-      font-size: 6vw;
-
-      margin-bottom: 1rem;
-
-    }
-
-    p {
-
-      font-size: 4vw;
-
-      max-width: 90%;
-
-      margin: auto;
-
-    }
-
-    .glitch {
-
-      animation: glitch 1s infinite;
-
-    }
-
-    @keyframes glitch {
-
-      0% { text-shadow: 2px 0 red; }
-
-      25% { text-shadow: -2px 0 blue; }
-
-      50% { text-shadow: 2px 0 green; }
-
-      75% { text-shadow: -2px 0 purple; }
-
-      100% { text-shadow: 2px 0 red; }
-
-    }
-
-    @media (min-width: 768px) {
-
-      h1 {
-
-        font-size: 3rem;
-
-      }
-
-      p {
-
-        font-size: 1.2rem;
-
-      }
-
-    }
-
-  </style>
-
+  <link rel="shortcut icon" href="" type="image/x-icon" />
+  <link rel="stylesheet" href="styles/uwu.css" />
 </head>
 
-<body>
+<body class="flex flex-col justify-center mx-auto max-w-3xl min-h-screen">
 
-  <h1 class="glitch" id="status">DOWN FOR MAINTENANCE</h1>
+    <!-- About -->
+    <div class="flex justify-between">
+        <h1>Stefan</h1>
+        <img src="assets/pfp.png" alt="my pfp" class="pt-2 pr-2 mt-2 rounded-full size-14">
+    </div>
+    <p>
+        <a href="http://github.com/lungustefan" class="link2">github</a> • 
+        <a href="http://discord.com/users/753179409682399332" class="link2">discord</a> • 
+        <a href="https://open.spotify.com/user/31y7nlasvptiqhxetzdvue42bn2e" class="link2">spotify</a>
+    </p>
+    
+    <hr class="my-4 border-dashed border-1">
 
-  <p id="reason">Initiating quantum flux realignment protocol...</p>
+    <p id="about">
+        Romanian student. I'm a system administrator for <a href="https://byteshield.ro/" class="link2">ByteShield</a>.  
+        I run a <a href="https://cdn.lungustefan.ro" class="link2">CDN</a> with no data limits.  
+    </p>
 
-  <script>
+    <!-- Projects -->
+    <h2 class="mt-2">Projects</h2>
+    <p>Here are the projects that I've worked on.</p>
+    <ul>
+        <li><a href="https://cdn.lungustefan.ro" class="link2">CDN</a></li>
+        <li>My <a href="https://lungustefan.systems" class="link2">status page</a></li>
+    </ul>
+    <p>Other than that, I guess, I am kinda useless.</p>
+    
 
-    const reasons = [
+    <!-- Footer -->
+    <div class="text-sm mt-[45vh]">Copyright 2025 Stefan | <button id="openModalBtn" class="m-0 link2">ipv6 certification</button> | Made with 💖 by <a href="http://orangc.net" class="link2">orangc</a>.</div>
 
-      "Recalibrating the hamster wheel.",
+    <!-- ipv6 cert modal -->
+    <div id="modal" class="flex hidden fixed inset-0 justify-center items-center text-sm bg-opacity-50 bg-rsurface">
+        <div class="relative p-6 w-full max-w-md rounded-lg shadow-xl bg-rsurface">
+          <h2 class="mb-4 text-lg font-semibold">ipv6 certification</h2>
+          <img src="//ipv6.he.net/certification/create_badge.php?pass_name=LunguStefan&amp;badge=3" style="border: 0; width: 229px; height: 137px" alt="IPv6 Certification Badge for LunguStefan"></img>
+        </div>
+        <script src="scripts/modal.js"></script>
+      </div>
 
-      "Synchronizing with the moon's gravitational field.",
-
-      "Running a background unicorn update.",
-
-      "Purging negative vibes from the server room.",
-
-      "Feeding the AI more memes.",
-
-      "Recharging the cloud with actual rain.",
-
-      "Upgrading from potato tier hosting.",
-
-      "Cleaning up a spilled energy drink on the motherboard.",
-
-      "Chasing down the escaped electrons.",
-
-      "Consulting with the cosmic IT support.",
-
-      "Polishing the server’s quantum core.",
-
-      "Removing gremlins from the codebase.",
-
-      "Realigning the flux capacitor.",
-
-      "Running on backup caffeine generator.",
-
-      "Bribing the bugs to leave.",
-
-      "Compiling the entire internet again.",
-
-      "Rebooting the space-time continuum.",
-
-      "Defragmenting the matrix.",
-
-      "Charging the servers with solar moonlight.",
-
-      "Negotiating with the digital overlords."
-
-    ];
-
-    setInterval(() => {
-
-      const rand = Math.floor(Math.random() * reasons.length);
-
-      document.getElementById('reason').textContent = reasons[rand];
-
-    }, 3000);
-
-  </script>
+  <!-- Scripts -->
+   <script src="scripts/australia.js"></script> <p class="hidden transform rotate-180"></p>
 
 </body>
 
